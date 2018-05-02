@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiku Bisto Appetizers</title>
+    <link rel="stylesheet" type="text/css" href="submenus.css">
+    <link rel="icon" href="images/noun_1635801_cc.png" type="image/gif" size="16x16">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="https://kiku.alohaorderonline.com">Order online</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="homepage.html" style="padding-top: 15px; padding-bottom: 15px; font-size: 55px; font-family: 'Amatic SC'">Kiku Bistro</a>
+            <a href="about.html">About</a>
+            <a href="directions.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <h1 class="boxhead">Rolls</h1>
+    <div class="accordianbox">
+        <button class="accordion">Spring Roll</button>
+        <div class="panel">
+            <p>Spicy Scallops | Cucumber | Crunch | Seaweed Salad</p>
+        </div>
+        <button class="accordion">Summer Roll</button>
+        <div class="panel">
+            <p>Tuna | Salmon | Avocado | Masago</p>
+        </div>
+        <button class="accordion">Fall Roll</button>
+        <div class="panel">
+            <p>Shrimp | Kanpyo | Crunch | Tuna | Salmon | Avacado | Cucumber</p>
+        </div>
+        <button class="accordion">Winter Roll</button>
+        <div class="panel">
+            <p>Spicy Flounder | Striped Bass | Red Snapper | Escolar Mix | Masago | Special Sauce | Deep Fried</p>
+        </div>
+        <button class="accordion">Salmon Tempura Roll</button>
+        <div class="panel">
+            <p>Salmon | Scallions | Radish | Masago | Special Sauce | Deep Fried</p>
+        </div>
+        <button class="accordion">Vegas Roll</button>
+        <div class="panel">
+            <p>Cream Cheese | Avacado | Smoked Salmon | Jalapeno | Special Sauce | Deep Fried</p>
+        </div>
+        <button class="accordion">California Ranch Roll</button>
+        <div class="panel">
+            <p>Spicy Crab | Avacado | Cucumber | Cream Cheese | Masago | Deep Fried</p>
+        </div>
+        <button class="accordion">Volcano Roll</button>
+        <div class="panel">
+            <p>Blue Crab | Avacado | Spicy Tuna | Scallions | Deep Fried</p>
+        </div>
+        <button class="accordion">American Dream Roll</button>
+        <div class="panel">
+            <p>Tempura Shrimp | Lettuce | Tobiko | Cucumber</p>
+        </div>
+        <button class="accordion">Spider Roll</button>
+        <div class="panel">
+            <p>Tempura Soft Shell Crab | Lettuce | Cucumber | Tobiko)</p>
+        </div>
+        <button class="accordion">Pink Geisha Roll</button>
+        <div class="panel">
+            <p>Shrimp | Cucumber | Jalapeno | Crunch | Spicy Crab | Masago | Soybean Paper</p>
+        </div>
+        <button class="accordion">Dynamite Roll</button>
+        <div class="panel">
+            <p>Yellowtail Mix | Kaiware | Cucumber | Lettuce | Crunch | Scallions</p>
+        </div>
+        <button class="accordion">Silk Lady Roll</button>
+        <div class="panel">
+            <p>Tuna or Salmon | Avacado | Cucumber | Kaiware | Masago | No Rice</p>
+        </div>
+        <button class="accordion">Rainbow Naruto Roll</button>
+        <div class="panel">
+            <p>Tuna | Salmon | Escolar | Crab Stick | Avacado | Cucumber | No Rice</p>
+        </div>
+        <button class="accordion">Melting Pot Roll</button>
+        <div class="panel">
+            <p>Tempura Shrimp | Salmon | Avacado | Masago | Grilled</p>
+        </div>
+        <button class="accordion">Uptown Roll</button>
+        <div class="panel">
+            <p>Spicy Tuna | Crunch | Avacado | Salmon | No Rice</p>
+        </div>
+        <button class="accordion">Christmas Roll</button>
+        <div class="panel">
+            <p>Blue Crab | Spicy Tuna | Avacado | Two Colors of Tobiko</p>
+        </div>
+        <button class="accordion">Kiku Spicy Tuna Roll</button>
+        <div class="panel">
+            <p>Spicy Tuna | Avacado | Cucumber | Crunch | Masago | Spice</p>
+        </div>
+
+    </div>
+    <div class="imagebox">
+        <img src="images/sushi1.png">
+        <img src="images/sushi2.png">
+        <img src="images/sushi3.png">
+        <img src="images/sushi4.png">
+        <img src="images/sushi%20long.png">
+    </div>
+    <a href="menu.html" class="backbutton">Back to Full Menu</a>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/kikubistrompls/?ref=hl">facebook</a>
+        <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=KikuBistro">twitter</a>
+        <a href="https://www.flickr.com/photos/86119973@N08">foursquare</a>
+        <p style="text-align: right; float: right"> We hope to see you soon.</p>
+    </div>
+
+</div>
+</body>
+</html>

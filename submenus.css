@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topnav {
+    background-color: rgb(102,169,168);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    width: 1200px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 32px 65px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Raleway";
+    font-weight: normal;
+}
+
+.topnav b {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 65px;
+    text-decoration: none;
+    font-size: 55px;
+    font-family: "Amatic SC";
+    font-weight: normal;
+}
+
+.topnav a:hover {
+    border-bottom: 5px solid rgb(44,115,121);
+}
+
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a.active {
+    background-color: rgb(44, 115, 121);
+    color: rgb(191, 209, 211);
+}
+body {
+    background-image: url("images/Artboard 1 copy.png");
+}
+.boxhead {
+    font-family: "Amatic SC";
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(44,115,121);
+    margin-top: 100px;
+    margin-left: 270px;
+    width: 680px;
+    float: left;
+}
+.accordianbox {
+    width: 650px;
+    height: 500px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(171,215,216);
+    border-radius: 20px;
+    overflow: scroll;
+}
+.accordion {
+    background-color: rgb(171,215,216);
+    color: rgb(44,115,121);
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    width: 680px;
+    height: 30px;
+    border: none;
+    font-size: 22px;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+/*.active, .accordian:hover {*/
+/*background-color: rgb(255,236,188);*/
+/*}*/
+
+.panel {
+    padding: 0 18px;
+    background-color: rgb(171,215,216);
+    display: none;
+    overflow: hidden;
+    color: rgb(44,115,121);
+    font-size: 18px;
+    font-family: Raleway;
+    font-style: italic;
+}
+
+.backbutton {
+    padding: 0 18px;
+    color: rgb(44,115,121);
+    font-size: 18px;
+    font-family: Raleway;
+    clear: left;
+    float: left;
+    margin-buttom: 10px;
+}
+.imagebox {
+    margin-left: 10px;
+    float: left;
+    width: 520px;
+}
+.imagebox img {
+    border-radius: 20px;
+    margin: 10px;
+    float: left;
+}
+
+.footer {
+    position: static;
+    overflow: auto;
+    float: left;
+    bottom: 0;
+    width: 1200px;
+    height: 30px;
+    margin-left: auto;
+    background-color: rgb(102,169,168);
+    color: white;
+    text-align: left;
+    clear: both;
+}
+
+.footer a {
+    margin: 10px 5px 10px 5px;
+    padding-top: 10px;
+}
+
+.footer p {
+    margin-top: 5px;
+    margin-right: 10px;
+}
