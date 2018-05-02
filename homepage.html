@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiku Bistro</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="icon" href="images/noun_1635801_cc.png" type="image/gif" size="16x16">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a>Order online</a>
+            <a href="menu.html">Menu</a>
+            <a href="homepage.html" style="padding-top: 15px; padding-bottom: 15px; font-size: 55px; font-family: 'Amatic SC'">Kiku Bistro</a>
+            <a href="about.html">About</a>
+            <a href="directions.html">Contact</a>
+            <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>-->
+        </div>
+
+    </header>
+
+    <div class="parallax"></div>
+
+    <div id="top" class="box1">
+        <div class="box1verticle">
+            <img src="images/glass%20clink.jpg" style="border-radius: 20px">
+        </div>
+        <div class="box1horizontal">
+            <img src="images/horisushi.jpg" style="border-radius: 20px">
+        </div>
+        <div class="box1text">
+            <h1 class="boxhead">Hours</h1>
+            <table>
+                <tr>
+                    <td class="hoursdates">Monday - Thursday</td>
+                    <td class="hourstimes">4:30pm-12:30am</td>
+                </tr>
+                <tr>
+                    <td class="hoursdates">Friday - Saturday</td>
+                    <td class="hourstimes">3:00pm-1:30am</td>
+                </tr>
+                <tr>
+                    <td class="hoursdates">Sunday</td>
+                    <td class="hourstimes">3:00pm-12:30am</td>
+                </tr>
+            </table>
+            <button class="button">
+                <a class="button"href="about.html">About</a>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="box2">
+        <div class="box2horizontal">
+            <img src="images/tempura.jpg" style="border-radius: 20px">
+        </div>
+        <div class="box2verticle">
+            <img src="images/sushi.jpg" style="border-radius: 20px; ">
+        </div>
+        <div class="box2text">
+            <h1 class="boxhead">Menu</h1>
+            <p class="boxp">Happy Hour is Monday through Friday 4:30 to 7:00PM as well as 9:00PM to close. All day Saturday and Sunday!</p>
+            <button class="button2">
+                <a href="menu.html"> Full Menu </a>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="box1">
+        <div class="box1verticle">
+            <img src="images/lake%20calhon.jpg" style="border-radius: 20px">
+        </div>
+        <div class="box1horizontal">
+            <img src="images/bike.jpg" style="border-radius: 20px">
+        </div>
+        <div class="box1text">
+            <h1 class="boxhead">Contact Us</h1>
+            <p class="boxp">2819 Hennepin Ave. S.</p>
+            <p class="boxp">Minneapolis 55408</p>
+            <p class="boxp">612-872-1778</p>
+            <button class="button">
+                <a href="directions.html">About</a>
+            </button>
+        </div>
+        <button onclick="topFunction()" href="#top" id="myBtn" title="Go to top">Top</button>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/kikubistrompls/?ref=hl">facebook</a>
+        <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=KikuBistro">twitter</a>
+        <a href="https://www.flickr.com/photos/86119973@N08">foursquare</a>
+        <p style="text-align: right; float: right"> We hope to see you soon.</p>
+    </div>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                document.getElementById("myTopnav").style.top = "0";
+            } else {
+                document.getElementById("myTopnav").style.top = "-100px";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 800;
+            document.documentElement.scrollTop = 800;
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiku Bisto Appetizers</title>
+    <link rel="stylesheet" type="text/css" href="submenus.css">
+    <link rel="icon" href="images/noun_1635801_cc.png" type="image/gif" size="16x16">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="https://kiku.alohaorderonline.com">Order online</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="homepage.html" style="padding-top: 15px; padding-bottom: 15px; font-size: 55px; font-family: 'Amatic SC'">Kiku Bistro</a>
+            <a href="about.html">About</a>
+            <a href="directions.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <h1 class="boxhead">APPETIZERS</h1>
+    <div class="accordianbox">
+        <button class="accordion">Edemame</button>
+        <div class="panel">
+            <p>Steamed whole soybeans sprinkled with sea salt</p>
+        </div>
+        <button class="accordion">Gyoza</button>
+        <div class="panel">
+            <p>Pan-fried dumpling - Choice of pork, shrimp or vegetable</p>
+        </div>
+        <button class="accordion">Kiku Spring Roll</button>
+        <div class="panel">
+            <p>2 fried vegetable spring rolls</p>
+        </div>
+        <button class="accordion">Miso Tofu</button>
+        <div class="panel">
+            <p>Deep fried tofu with miso sauce</p>
+        </div>
+        <button class="accordion">Shishito Pepper</button>
+        <div class="panel">
+            <p>whole grilled peppers sprinkled with sea salt</p>
+        </div>
+        <button class="accordion">Shumai</button>
+        <div class="panel">
+            <p>Steamed open-faced dumpling - Choice of pork or shrimp</p>
+        </div>
+        <button class="accordion">Vegetable Tempura</button>
+        <div class="panel">
+            <p>Lightly battered and fried vegetables</p>
+        </div>
+        <button class="accordion">Shrimp Tempura</button>
+        <div class="panel">
+            <p>Lightly battered and fried jumbo shrimp and vegetables</p>
+        </div>
+        <button class="accordion">Fried Calimari</button>
+        <div class="panel">
+            <p>Lightly battered and fried squid</p>
+        </div>
+        <button class="accordion">IkaButter</button>
+        <div class="panel">
+            <p>Grilled squid in a teriyaki sauce</p>
+        </div>
+        <button class="accordion">Tempura Soft Shell Crab</button>
+        <div class="panel">
+            <p>lightly battered and fried soft shell crab</p>
+        </div>
+        <button class="accordion">Beef Negimaki</button>
+        <div class="panel">
+            <p>Scallions wrapped in teriyaki-marinated grilled strips of beef</p>
+        </div>
+        <button class="accordion">Five Spice Chicken Wings</button>
+        <div class="panel">
+            <p>Eight pieces</p>
+        </div>
+        <button class="accordion">Yellowtail Jalepeno</button>
+        <div class="panel">
+            <p>cucumber and radish sprouts wrapped in yellowtail with a ponzu sauce</p>
+        </div>
+    </div>
+    <div class="imagebox">
+        <img src="images/gyoza.png">
+        <img src="images/greens.png">
+        <img src="images/misosoup.png">
+        <img src="images/squid.png">
+        <img src="images/fried.png">
+    </div>
+    <a href="menu.html" class="backbutton">Back to Full Menu</a>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <div class="footer">
+        <a href="https://www.facebook.com/kikubistrompls/?ref=hl">facebook</a>
+        <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=KikuBistro">twitter</a>
+        <a href="https://www.flickr.com/photos/86119973@N08">foursquare</a>
+        <p style="text-align: right; float: right"> We hope to see you soon.</p>
+    </div>
+</div>
+</body>
+</html>
